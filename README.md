@@ -7,7 +7,7 @@ Welcome to my personal portfolio repository! This project showcases my work in s
 ## Repository Contents
 
 - **Portfolio Website**: `index.html` – the responsive homepage showcasing my skills and projects  
-- **Curriculum Vitae**: `Athenkosi_Nqumakhwe's_CV.pdf` – most recent version of my CV in PDF format
+- **Curriculum Vitae**: `Athenkosi_Nqumakhwe_CV.pdf` – most recent version of my CV in PDF format
 
 ---
 
