@@ -1,84 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Athenkosi Nqumakhwe - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.0">
+<title>Nqumakhwe Athenkosi | Developer Portfolio</title>
+<style>
+/* ===== Global Styles ===== */
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Fira Code', monospace, 'Courier New', monospace; }
+body { background:#0d1117; color:#c9d1d9; line-height:1.6; scroll-behavior:smooth; }
+a { color:#58a6ff; text-decoration:none; transition:0.3s; }
+a:hover { color:#1f6feb; }
+section { padding:60px 20px; max-width:900px; margin:0 auto; border-bottom:1px solid #21262d; }
+h2 { font-size:2rem; color:#58a6ff; margin-bottom:20px; border-left:4px solid #58a6ff; padding-left:10px; }
+h3 { color:#79c0ff; margin-bottom:10px; }
+ul { list-style:none; margin-left:0; }
+ul li { padding:15px; margin-bottom:15px; background:#161b22; border-left:4px solid #58a6ff; border-radius:5px; transition:transform 0.3s, background 0.3s; }
+ul li:hover { transform:translateY(-3px); background:#21262d; }
+
+/* ===== HERO ===== */
+.hero { text-align:center; padding:100px 20px; }
+.hero h1 { font-size:3rem; color:#58a6ff; margin-bottom:10px; }
+.hero .subtitle { font-size:1.2rem; margin-bottom:20px; color:#8b949e; }
+.hero blockquote { font-style:italic; margin:20px 0; color:#c9d1d9; }
+.hero .contact, .hero .links { margin-top:10px; }
+
+/* ===== NAVIGATION ===== */
+nav { position:fixed; top:0; width:100%; background:#0d1117; border-bottom:1px solid #21262d; padding:10px 0; z-index:100; text-align:center; }
+nav a { margin:0 15px; font-weight:bold; }
+body { padding-top:60px; }
+
+/* ===== SKILLS ===== */
+.skills-container { display:flex; flex-wrap:wrap; gap:40px; }
+.skills-container>div { flex:1; }
+.skill-bar { background:#21262d; border-radius:5px; overflow:hidden; margin-bottom:10px; }
+.skill-fill { height:12px; background:#58a6ff; width:0%; transition:width 1.5s; }
+
+/* ===== TUTORING ===== */
+#tutoring ul { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
+#tutoring li { background:#161b22; padding:10px; border-radius:5px; border-left:4px solid #79c0ff; text-align:center; font-weight:bold; }
+
+/* ===== CONTACT ===== */
+#contact p { margin:8px 0; }
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){ .skills-container{flex-direction:column;} .hero h1{font-size:2.2rem;} h2{font-size:1.6rem;} }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Athenkosi Nqumakhwe</h1>
-    <p>BSc Computer Science & Physics | System Development | Entry-Level IT Professional | Software Engineering</p>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>
-      I am a recent graduate from the University of Fort Hare with a BSc in Computer Science and Physics, 
-      currently furthering my studies in System Development. My expertise includes programming, networking, 
-      and database management, supported by hands-on experience through internships and projects. 
-      I am passionate about technology, problem-solving, and continuous learning.
-    </p>
-  </section>
+<!-- NAVIGATION -->
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#tutoring">Tutoring</a>
+<a href="#education">Education</a>
+<a href="#certifications">Certifications</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> C++, HTML, CSS, Visual Basic, Java (Spring Boot), JavaScript (basic)</li>
-      <li><strong>Databases:</strong> MySQL, Database Management (DBM)</li>
-      <li><strong>Tools & Tech:</strong> GitHub, IntelliJ IDEA, CMD, Wireshark, Cisco Packet Tracer, Pantheon Hosting</li>
-      <li><strong>Software:</strong> Microsoft Office Suite</li>
-      <li><strong>Networking:</strong> Basic networking concepts, packet tracing, troubleshooting</li>
-      <li><strong>Soft Skills:</strong> Communication, problem-solving, time management, team collaboration</li>
-    </ul>
-  </section>
+<!-- HERO -->
+<section id="home" class="hero">
+<h1>Nqumakhwe Athenkosi</h1>
+<p class="subtitle">Computer Science & Physics Graduate • Web Developer • Remote Tutor</p>
+<blockquote>“I build modern websites, tutor complex modules, and deliver reliable digital solutions with precision and excellence.”</blockquote>
+<p class="contact">📍 Midrand, South Africa | 📞 072 963 2370 | 📧 nqumakhweathenkosi@gmail.com</p>
+<p class="links">
+<a href="https://github.com/Nqumakhwe-Athenkosi" target="_blank">GitHub</a> | 
+<a href="https://linkedin.com/in/athenkosi-nqumakhwe-265297373" target="_blank">LinkedIn</a>
+</p>
+</section>
 
-  <!-- Certificates Section -->
-  <section id="certificates">
-    <h2 class="section-title">IT & Professional Certifications</h2>
-    <p>
-      <a href="https://coursera.org/verify/7Y619S6AY2JG" target="_blank" rel="noopener noreferrer">
-        Basic Information Literacy – SUNY (Coursera)
-      </a>
-    </p>
-    <p>
-      <a href="https://coursera.org/verify/BHZ6FL0F4MPK" target="_blank" rel="noopener noreferrer">
-        Time Management – UCI (Coursera)
-      </a>
-    </p>
-    <p>
-      <a href="https://drive.google.com/file/d/1pXQNdw_HQPD7rCNPe_OsuXIavsrZu2iA/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-        Cisco Packet Tracer & Wireshark Certificate
-      </a>
-    </p>
-  </section>
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p>I am a dedicated BSc graduate in Computer Science & Physics from the University of Fort Hare. I specialize in web development, IT support, and tutoring modules I excelled in. My focus is on remote work and helping students master technical subjects.</p>
+<ul>
+<li>Web Development Projects</li>
+<li>Remote Tutoring (CS, Maths & Physics)</li>
+<li>IT Support & System Troubleshooting</li>
+<li>Software Engineering</li>
+</ul>
+</section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>Email: <a href="mailto:nqumakhweathenkosi@gmail.com">nquamkhweathenkosi@gmail.com</a></p>
-    <p>Phone: +27 72 963 2370</p>
-    <p>
-      GitHub: <a href="https://github.com/Nqumakhwe-Athenkosi" target="_blank">github.com/Nqumakhwe-Athenkosi</a><br>
-      LinkedIn: <a href="https://www.linkedin.com/in/athenkosi-nqumakhwe-265297373" target="_blank">
-        linkedin.com/in/athenkosi-nqumakhwe
-      </a>
-    </p>
-  </section>
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills-container">
+<div>
+<h3>Technical Skills</h3>
+<div>HTML <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div></div>
+<div>CSS <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+<div>JavaScript <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div></div>
+<div>C++ <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div></div>
+<div>Networking (Cisco/Wireshark) <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div></div>
+<div>Spring Boot <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div></div>
+</div>
+<div>
+<h3>Soft Skills</h3>
+<div>Communication <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div></div>
+<div>Problem-Solving <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+<div>Teamwork <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+<div>Time Management <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div></div>
+</div>
+</div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Athenkosi Nqumakhwe. All rights reserved.</p>
-  </footer>
+<!-- TUTORING -->
+<section id="tutoring">
+<h2>Remote Tutoring</h2>
+<p>I offer online tutoring for students in Mathematics, Computer Science, and Physics at various levels. My goal is to help students understand complex concepts with clarity and practical examples.</p>
+<ul>
+<li><strong>Mathematics:</strong> Grade 10 – 2nd Year University</li>
+<li><strong>Computer Science:</strong> 1st & 2nd Year University</li>
+<li><strong>Physics:</strong> Grade 10 – 3rd Year University</li>
+</ul>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+<ul>
+<li><strong>BSc in Computer Science & Physics:</strong> University of Fort Hare | 2022–2024 | Graduated 08 May 2025 | Credits Passed: 400</li>
+<li><strong>Marelane Senior Secondary School:</strong> Grade 12 (Matric), 2021</li>
+<li><strong>Professional Training:</strong> Waiter & Barman, Golden Day Catering — Completed 01/03/2025</li>
+</ul>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+<h2>Certifications</h2>
+<ul>
+<li>Basic Information Literacy – Coursera (SUNY), July 2025</li>
+<li>Work Smarter, Not Harder: Time Management – Coursera (UCI), June 2025</li>
+<li>Cisco Packet Tracer & Wireshark Certificates – 2024</li>
+</ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects & Achievements</h2>
+<ul>
+<li><strong>iCityTek Website Redesign:</strong> Full replication & redesign of all pages with modern UI/UX. HTML, CSS, JavaScript, Pantheon hosted.</li>
+<li><strong>Spring Boot Back-end Project:</strong> Java Spring Boot application development with database integration.</li>
+<li><strong>MySQL Database Project:</strong> Designed and implemented a relational database for data management.</li>
+<li><strong>Cluster Competition (2023):</strong> Represented UFH in regional technology challenge.</li>
+</ul>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Experience</h2>
+<ul>
+<li><strong>Web Development & Uploading Intern — Squad 2 (Assistant Leader):</strong> Led team tasks, assisted in troubleshooting, developed interactive web projects, maintained website structure, submitted daily logs, attended meetings.</li>
+<li><strong>Event Support (Waiter/Barman):</strong> Green House Festival, Hatfield — Customer service, beverage & serving management.</li>
+</ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Me</h2>
+<p>📍 Midrand, South Africa</p>
+<p>📞 060 419 5125 / 072 963 2370 </p>
+<p>📧 nqumakhweathenkosi@gmail.com</p>
+<p>🔗 <a href="https://github.com/Nqumakhwe-Athenkosi" target="_blank">GitHub</a></p>
+<p>🔗 <a href="https://linkedin.com/in/athenkosi-nqumakhwe-265297373" target="_blank">LinkedIn</a></p>
+</section>
+
+<script>
+// Animate skill bars on scroll
+window.addEventListener('scroll', () => {
+    const skills = document.querySelectorAll('.skill-fill');
+    const trigger = window.innerHeight * 0.8;
+    skills.forEach(skill => {
+        const top = skill.getBoundingClientRect().top;
+        if(top < trigger) { skill.style.width = skill.dataset.width; }
+    });
+});
+</script>
+
 </body>
 </html>
