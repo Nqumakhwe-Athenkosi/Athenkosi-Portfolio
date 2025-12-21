@@ -43,6 +43,42 @@ body { padding-top:60px; }
 
 /* ===== CONTACT ===== */
 #contact p { margin:8px 0; }
+#contact form {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  border-radius: 6px;
+}
+
+#contact button {
+  background: #58a6ff;
+  color: #0d1117;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background: #1f6feb;
+}
+
+#form-status {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:768px){ .skills-container{flex-direction:column;} .hero h1{font-size:2.2rem;} h2{font-size:1.6rem;} }
@@ -200,25 +236,56 @@ BSc Computer Science & Physics Graduate • Front-End Web Developer • Junior S
 </section>
 
 <!-- CONTACT -->
+
 <section id="contact">
-<h2>Contact Me</h2>
-<p>📍 Midrand, South Africa</p>
-<p>📞 060 419 5125 / 072 963 2370 </p>
-<p>📧 nqumakhweathenkosi@gmail.com</p>
-<p>🔗 <a href="https://github.com/Nqumakhwe-Athenkosi" target="_blank">GitHub</a></p>
-<p>🔗 <a href="https://linkedin.com/in/athenkosi-nqumakhwe-265297373" target="_blank">LinkedIn</a></p>
+  <h2>Contact Me</h2>
+
+  <form id="contact-form" data-recaptcha="true">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="form-status"></p>
 </section>
 
+<!-- EmailJS -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 <script>
-// Animate skill bars on scroll
-window.addEventListener('scroll', () => {
-    const skills = document.querySelectorAll('.skill-fill');
-    const trigger = window.innerHeight * 0.8;
-    skills.forEach(skill => {
-        const top = skill.getBoundingClientRect().top;
-        if(top < trigger) { skill.style.width = skill.dataset.width; }
+ 
+  (function(){
+    emailjs.init("bxxrLyatnu9gpdfCa"); 
+  })();
+
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const submitBtn = form.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Sending...";
+    status.innerText = "";
+
+    emailjs.sendForm(
+      "service_25uzbis",  
+      "template_zgbzx3g", 
+      this
+    ).then(() => {
+      status.innerText = "✅ Message sent successfully!";
+      form.reset();
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Send Message";
+    }).catch((error) => {
+      status.innerText = "❌ Failed to send message. Check console for details.";
+      console.error("EmailJS Error:", error);
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Send Message";
     });
-});
+  });
 </script>
 
 </body>
