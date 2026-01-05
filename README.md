@@ -1,55 +1,41 @@
-# Athenkosi Nqumakhwe – Portfolio
+# Nqumakhwe Athenkosi Portfolio
 
-Welcome to my personal portfolio repository! This project showcases my work in software development via a live portfolio site and includes a downloadable CV.
-
----
-
-## Repository Contents
-
-- **Portfolio Website**: `index.html` – the responsive homepage showcasing my skills and projects  
-- **Curriculum Vitae**: `Athenkosi_Nqumakhwe_CV.pdf` – most recent version of my CV in PDF format
+This repository contains the source code for my personal portfolio website. It highlights my background, skills, projects, and professional experience as a **BSc Computer Science & Physics graduate**, **front-end web developer**, **junior software engineer**, and **remote tutor**.
 
 ---
 
-## How to View
-
-1. Clone or download this repository.  
-2. Open `index.html` in any modern web browser (e.g., Chrome, Firefox, Safari, Edge) to explore my portfolio.  
-3. Download or open the PDF file to view my CV.
+## 🌐 Live Website
+https://nqumakhwe-athenkosi.netlify.app/
 
 ---
 
-## How to Download This Portfolio
-
-If you'd like to download my portfolio to your computer, follow these simple steps:
-
-1. Visit the repository page: [https://github.com/Nqumakhwe-Athenkosi/Athenkosi-Portfolio](https://github.com/Nqumakhwe-Athenkosi/Athenkosi-Portfolio)  
-2. Click the green **Code** button near the top right.  
-3. Select **Download ZIP** from the dropdown menu.  
-4. Save the ZIP file to your computer.  
-5. Extract the contents of the ZIP file.  
-6. Open the extracted folder and double-click `index.html` to view the portfolio in your web browser.  
-7. You can also open `Athenkosi_Nqumakhwe's_CV.pdf` to see my CV.
-
-*Note: Even though there is no ZIP in the repo files list, GitHub automatically creates the ZIP file when you download the repository using the “Download ZIP” option.*
+## 🧠 About
+The portfolio is designed to be clean, responsive, and professional, focusing on clarity and usability across devices. It serves as a central place to showcase my technical abilities and practical experience.
 
 ---
 
-## Highlights
-
-- Clean, mobile-friendly portfolio design  
-- Easy access to download or view my CV  
-- Direct links to my GitHub and LinkedIn profiles
-
----
-
-## Connect with Me
-
-- **Email**: nqumakhweathenkosi@gmail.com  
-- **LinkedIn**: [Athenkosi Nqumakhwe](https://www.linkedin.com/in/athenkosi-nqumakhwe-265297373)  
-- **GitHub**: [Nqumakhwe‑Athenkosi](https://github.com/Nqumakhwe-Athenkosi)
+## 🛠️ Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- EmailJS (contact form integration)
 
 ---
 
-Thank you for visiting my portfolio!  
-Feel free to reach out if you'd like to connect or collaborate.
+## ✨ Features
+- Fixed navigation with active section highlighting
+- Responsive layout for desktop and mobile
+- Skills visualization with animated progress bars
+- Sections for education, certifications, projects, and experience
+- Integrated contact form for direct communication
+
+---
+
+## 📬 Contact
+- Email: nqumakhweathenkosi@gmail.com  
+- GitHub: https://github.com/Nqumakhwe-Athenkosi  
+- LinkedIn: https://linkedin.com/in/athenkosi-nqumakhwe-265297373  
+
+---
+
+© 2025 Nqumakhwe Athenkosi. All rights reserved.
