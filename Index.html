@@ -1,292 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Nqumakhwe Athenkosi – Computer Science graduate, web developer, and remote tutor specializing in modern web development and software engineering.">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="description" content="Nqumakhwe Athenkosi – Computer Science graduate, web developer, and remote tutor specializing in modern web development and software engineering."><meta name="author" content="Nqumakhwe Athenkosi"><meta name="theme-color" content="#0d1117"><meta property="og:title" content="Nqumakhwe Athenkosi Portfolio"><meta property="og:description" content="Explore the portfolio of Nqumakhwe Athenkosi – Computer Science graduate, web developer, and remote tutor."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Nqumakhwe Athenkosi Portfolio"><meta name="twitter:description" content="Explore the portfolio of Nqumakhwe Athenkosi – Computer Science graduate, web developer, and remote tutor."><title>Nqumakhwe Athenkosi Portfolio</title><style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Fira Code,monospace}body{background:#0d1117;color:#c9d1d9;line-height:1.6;padding-top:60px}a{color:#58a6ff;text-decoration:none}a:hover{color:#1f6feb}section{padding:60px 20px;max-width:900px;margin:auto;border-bottom:1px solid #21262d}h2{font-size:2rem;color:#58a6ff;text-align:center;margin-bottom:2rem}ul{list-style:none}ul li{padding:15px;margin-bottom:15px;background:#161b22;border-left:4px solid #58a6ff;border-radius:5px}
+#main-header{position:fixed;top:0;left:0;width:100%;background:#0d1117;z-index:1000;box-shadow:0 2px 5px rgba(0,0,0,.3)}nav{display:flex;justify-content:space-between;align-items:center;padding:10px 20px}.nav-links{display:flex;gap:20px;align-items:center}.nav-links li{background:none}.nav-links a.active-link{color:#ff6a00;border-bottom:2px solid #ff6a00}
+.logo{width:40px;height:40px;border-radius:50%}
+.hero{text-align:center;padding:100px 20px}.hero h1{font-size:3rem;color:#58a6ff}
+.skills-container{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.skill-category{background:#1a1a1a;padding:1.5rem;border-radius:15px}
+.skill-bar{background:#333;border-radius:20px;height:15px;margin:.5rem 0}.skill-fill{background:linear-gradient(90deg,#ff6a00,#ee0979);width:0;height:100%;transition:width 1.5s}
+#contact{display:flex;flex-direction:column;align-items:center;text-align:center}
+#contact form{max-width:500px;width:100%;display:flex;flex-direction:column;gap:15px}
+#contact input,#contact textarea{padding:12px;background:#161b22;border:1px solid #30363d;color:#c9d1d9;border-radius:6px}
+#contact button{background:#58a6ff;border:none;padding:12px;font-weight:bold;border-radius:6px;cursor:pointer}
+#footer{text-align:center;padding:20px;border-top:1px solid #21262d;font-size:.9rem}
+@media(max-width:900px){.skills-container{grid-template-columns:1fr}}
+</style></head><body>
 
-<title>Nqumakhwe Athenkosi | Developer Portfolio</title>
-<style>
-/* ===== Global Styles ===== */
-* { margin:0; padding:0; box-sizing:border-box; font-family: 'Fira Code', monospace, 'Courier New', monospace; }
-body { background:#0d1117; color:#c9d1d9; line-height:1.6; scroll-behavior:smooth; }
-a { color:#58a6ff; text-decoration:none; transition:0.3s; }
-a:hover { color:#1f6feb; }
-section { padding:60px 20px; max-width:900px; margin:0 auto; border-bottom:1px solid #21262d; }
-h2 { font-size:2rem; color:#58a6ff; margin-bottom:20px; border-left:4px solid #58a6ff; padding-left:10px; }
-h3 { color:#79c0ff; margin-bottom:10px; }
-ul { list-style:none; margin-left:0; }
-ul li { padding:15px; margin-bottom:15px; background:#161b22; border-left:4px solid #58a6ff; border-radius:5px; transition:transform 0.3s, background 0.3s; }
-ul li:hover { transform:translateY(-3px); background:#21262d; }
+<header id="main-header"><nav><ul class="nav-links">
+<li><img src="https://media.licdn.com/dms/image/v2/D5603AQFgytW_Kbrvhg/profile-displayphoto-scale_200_200/B56ZfWC3OrGoAc-/0/1751642765208" class="logo"></li>
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></header>
 
-/* ===== HERO ===== */
-.hero { text-align:center; padding:100px 20px; }
-.hero h1 { font-size:3rem; color:#58a6ff; margin-bottom:10px; }
-.hero .subtitle { font-size:1.2rem; margin-bottom:20px; color:#8b949e; }
-.hero blockquote { font-style:italic; margin:20px 0; color:#c9d1d9; }
-.hero .contact, .hero .links { margin-top:10px; }
+<section id="home" class="hero"><h1>Nqumakhwe Athenkosi</h1><p>BSc CS & Physics • Web Developer • Tutor</p></section>
 
-/* ===== NAVIGATION ===== */
-nav { position:fixed; top:0; width:100%; background:#0d1117; border-bottom:1px solid #21262d; padding:10px 0; z-index:100; text-align:center; }
-nav a { margin:0 15px; font-weight:bold; }
-body { padding-top:60px; }
+<section id="about"><h2>About Me</h2><p>BSc Computer Science & Physics graduate specializing in web development, IT support and tutoring.</p></section>
 
-/* ===== SKILLS ===== */
-.skills-container { display:flex; flex-wrap:wrap; gap:40px; }
-.skills-container>div { flex:1; }
-.skill-bar { background:#21262d; border-radius:5px; overflow:hidden; margin-bottom:10px; }
-.skill-fill { height:12px; background:#58a6ff; width:0%; transition:width 1.5s; }
+<section id="skills"><h2>Skills</h2><div class="skills-container">
+<div class="skill-category">HTML<div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>CSS<div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+<div class="skill-category">JavaScript<div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div></div>
+<div class="skill-category">Waitering<div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+</div></section>
 
-/* ===== TUTORING ===== */
-#tutoring ul { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
-#tutoring li { background:#161b22; padding:10px; border-radius:5px; border-left:4px solid #79c0ff; text-align:center; font-weight:bold; }
+<section id="projects"><h2>Projects</h2><ul><li>iCityTek Website Redesign</li><li>Spring Boot Backend</li></ul></section>
 
-/* ===== CONTACT ===== */
-#contact p { margin:8px 0; }
-#contact form {
-  max-width: 500px;
-  margin-top: 20px;
-}
+<section id="contact"><h2>Contact</h2>
+<form id="contact-form"><input name="name" placeholder="Name" required><input name="email" type="email" placeholder="Email" required><textarea name="message" placeholder="Message" required></textarea><button>Send</button></form>
+<p id="form-status"></p></section>
 
-#contact input,
-#contact textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 12px;
-  background: #161b22;
-  border: 1px solid #30363d;
-  color: #c9d1d9;
-  border-radius: 6px;
-}
+<footer id="footer">© 2025 Nqumakhwe Athenkosi</footer>
 
-#contact button {
-  background: #58a6ff;
-  color: #0d1117;
-  border: none;
-  padding: 12px;
-  width: 100%;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-#contact button:hover {
-  background: #1f6feb;
-}
-
-#form-status {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-
-/* ===== RESPONSIVE ===== */
-@media(max-width:768px){ .skills-container{flex-direction:column;} .hero h1{font-size:2.2rem;} h2{font-size:1.6rem;} }
-</style>
-</head>
-<body>
-
-<!-- NAVIGATION -->
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#tutoring">Tutoring</a>
-<a href="#education">Education</a>
-<a href="#certifications">Certifications</a>
-<a href="#projects">Projects</a>
-<a href="#experience">Experience</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<!-- HERO -->
-<section id="home" class="hero">
-<h1>Nqumakhwe Athenkosi</h1>
-<p class="subtitle">
-BSc Computer Science & Physics Graduate • Front-End Web Developer • Junior Software Engineer • Remote Tutor
-</p>
-<blockquote>“I build modern websites, tutor complex modules, and deliver reliable digital solutions with precision and excellence.”</blockquote>
-<p class="contact">📍 Midrand, South Africa | 📞 060 419 5125 | 📧 nqumakhweathenkosi@gmail.com</p>
-<p class="links">
-<a href="https://github.com/Nqumakhwe-Athenkosi" target="_blank">GitHub</a> | 
-<a href="https://linkedin.com/in/athenkosi-nqumakhwe-265297373" target="_blank">LinkedIn</a>
-</p>
-<p class="links">
-<a href="#contact">Hire Me</a> | 
-<a href="#projects">View Projects</a>
-</p>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-<h2>About Me</h2>
-<p>I am a dedicated BSc graduate in Computer Science & Physics from the University of Fort Hare. I specialize in web development, IT support, and tutoring modules I excelled in. My focus is on remote work and helping students master technical subjects.</p>
-<ul>
-<li>Web Development Projects</li>
-<li>Remote Tutoring (CS, Maths & Physics)</li>
-<li>IT Support & System Troubleshooting</li>
-<li>Software Engineering</li>
-</ul>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-<h2>Skills</h2>
-<div class="skills-container">
-<div>
-<h3>Technical Skills</h3>
-<div>HTML5 (Semantic Markup) 
-     <div class="skill-bar">
-         <div class="skill-fill" data-width="95%">
-         </div>
-     </div>
-</div>
-<div>CSS3 (Flexbox, Grid, Responsive Design)
-     <div class="skill-bar">
-          <div class="skill-fill" data-width="90%">
-          </div>
-     </div>
-</div>
-<div>JavaScript (DOM, Events, ES6) 
-     <div class="skill-bar">
-          <div class="skill-fill" data-width="85%">
-          </div>
-      </div>
-</div>
-<div>C++ 
-     <div class="skill-bar">
-          <div class="skill-fill" data-width="80%">
-          </div>
-     </div>
-</div>
-<div>Networking (Cisco/Wireshark) 
-     <div class="skill-bar">
-           <div class="skill-fill" data-width="75%">
-           </div>
-     </div>
-</div>
-<div>Spring Boot (REST APIs, MVC) 
-     <div class="skill-bar">
-          <div class="skill-fill" data-width="70%">
-          </div>
-     </div>
-</div>
-
-</div>
-<div>
-<h3>Soft Skills</h3>
-<div>Communication <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div></div>
-<div>Problem-Solving <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
-<div>Teamwork <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
-<div>Time Management <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div></div>
-</div>
-</div>
-</section>
-
-<!-- TUTORING -->
-<section id="tutoring">
-<h2>Remote Tutoring</h2>
-<p>I offer online tutoring for students in Mathematics, Computer Science, and Physics at various levels. My goal is to help students understand complex concepts with clarity and practical examples.</p>
-<ul>
-<li><strong>Mathematics:</strong> Grade 10 – 2nd Year University</li>
-<li><strong>Computer Science:</strong> 1st & 2nd Year University</li>
-<li><strong>Physics:</strong> Grade 10 – 3rd Year University</li>
-</ul>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-<h2>Education</h2>
-<ul>
-<li><strong>BSc in Computer Science & Physics:</strong> University of Fort Hare | 2022–2024 | Graduated 08 May 2025 | Credits Passed: 400</li>
-<li><strong>Marelane Senior Secondary School:</strong> Grade 12 (Matric), 2021</li>
-<li><strong>Professional Training:</strong> Waiter & Barman, Golden Day Catering — Completed 01/03/2025</li>
-</ul>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-<h2>Certifications</h2>
-<ul>
-<li>Basic Information Literacy – Coursera (SUNY), July 2025</li>
-<li>Work Smarter, Not Harder: Time Management – Coursera (UCI), June 2025</li>
-<li>Cisco Packet Tracer & Wireshark Certificates – 2024</li>
-</ul>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-<h2>Projects & Achievements</h2>
-<ul>
-<li>
-<strong>iCityTek Website Redesign:</strong>Rebuilt and redesigned a multi-page corporate website from scratch using HTML, CSS, and JavaScript. Improved layout clarity, responsiveness, and user navigation. Deployed on Pantheon.</li>
-<li><strong>Spring Boot Back-end Project:</strong> Java Spring Boot application development with database integration.</li>
-<li><strong>MySQL Database Project:</strong> Designed and implemented a relational database for data management.</li>
-<li><strong>Cluster Competition (2023):</strong> Represented UFH in regional technology challenge.</li>
-</ul>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-<h2>Experience</h2>
-<ul>
-<li><strong>Web Development & Uploading Intern — Squad 2 (Assistant Leader):</strong> Led team tasks, assisted in troubleshooting, developed interactive web projects, maintained website structure, submitted daily logs, attended meetings.</li>
-<li><strong>Event Support (Waiter/Barman):</strong> Green House Festival, Hatfield — Customer service, beverage & serving management.</li>
-</ul>
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-  <h2>Contact Me</h2>
-
-  <form id="contact-form" data-recaptcha="true">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-
-  <p id="form-status"></p>
-</section>
-
-<!-- EmailJS -->
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
 <script>
- 
-  (function(){
-    emailjs.init("bxxrLyatnu9gpdfCa"); 
-  })();
-
-  const form = document.getElementById("contact-form");
-  const status = document.getElementById("form-status");
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const submitBtn = form.querySelector("button[type='submit']");
-    submitBtn.disabled = true;
-    submitBtn.innerText = "Sending...";
-    status.innerText = "";
-
-    emailjs.sendForm(
-      "service_25uzbis",  
-      "template_zgbzx3g", 
-      this
-    ).then(() => {
-      status.innerText = "✅ Message sent successfully!";
-      form.reset();
-      submitBtn.disabled = false;
-      submitBtn.innerText = "Send Message";
-    }).catch((error) => {
-      status.innerText = "❌ Failed to send message. Check console for details.";
-      console.error("EmailJS Error:", error);
-      submitBtn.disabled = false;
-      submitBtn.innerText = "Send Message";
-    });
-  });
+emailjs.init("DFnRe49nAHdnsZKQA");
+document.querySelectorAll(".skill-fill").forEach(e=>new IntersectionObserver(t=>{t.forEach(o=>o.isIntersecting?o.target.style.width=o.target.dataset.width:o.target.style.width="0")},{threshold:.5}).observe(e));
 </script>
 
-</body>
-</html>
+</body></html>
